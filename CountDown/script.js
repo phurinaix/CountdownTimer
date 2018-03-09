@@ -15,9 +15,7 @@ button.addEventListener('click', function(){
     countDownDate = new Date(stringDate).getTime();
 });
 
-
 var x = setInterval(function() {
-
     var now = new Date().getTime();
     
     var distance = countDownDate - now;
@@ -31,12 +29,9 @@ var x = setInterval(function() {
     document.getElementById("result").innerHTML = secondCountdown;
     
     if (distance < 0) {
-        // clearInterval(x);
         document.getElementById("result").innerHTML = "0";
-        // window.location.reload();
     }
 }, 1000);
-
 
 //default value in input form
 function defaultCurrentDate(){
